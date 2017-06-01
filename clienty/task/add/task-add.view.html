@@ -1,0 +1,50 @@
+<div>
+<form>
+  <div class="form-group">
+    <label >Project Dropdown</label>
+    <input type="text" ng-model="addCtrl.projectSelected" class="form-control" placeholder="Project">
+  </div>
+    <md-input-container>
+  <md-select ng-model="addCtrl.projectSelected" aria-label="Project options">
+    <md-select-header>
+      <span> Projects - </span>
+    </md-select-header>
+    <md-option ng-value="opt._id" ng-repeat="opt in addCtrl.allProjects">{{opt.project_name}}</md-option>
+  </md-select>
+</md-input-container>
+  <div class="form-group">
+    <label >Title of the task</label>
+    <input type="text" ng-model="addCtrl.title" class="form-control" placeholder="Task title">
+  </div>
+  <div class="form-group">
+    <label >description</label>
+    <input type="text" ng-model="addCtrl.description" class="form-control" placeholder="description">
+  </div>
+  <div class="form-group">
+    <label >Date (By default today)</label>
+    <input type="text" ng-model="addCtrl.dateCreated" class="form-control" placeholder="Date">
+  </div>
+      <md-input-container>
+  <md-select ng-model="addCtrl.priority" aria-label="Priority options">
+    <md-select-header>
+      <span> Priority - </span>
+    </md-select-header>
+      <md-option ng-value="5">5</md-option>
+      <md-option ng-value="4">4</md-option>
+      <md-option ng-value="3">3</md-option>
+      <md-option ng-value="2">2</md-option>
+      <md-option ng-value="1">1</md-option>
+  </md-select>
+</md-input-container>
+  <div class="form-group">
+    <label >Dead Line(Expected)</label>
+    <input type="text" ng-model="addCtrl.deadLine" class="form-control" placeholder="Dead Line">
+  </div>
+  <div class="form-group">
+    <label >Estimate in hours</label>
+    <input type="text" ng-model="addCtrl.estimate" class="form-control" placeholder="Estimate">
+  </div>
+  
+  <button type="submit" class="btn btn-default" ng-click = "addCtrl.addNewTask()">Submit</button>
+</form>
+</div>

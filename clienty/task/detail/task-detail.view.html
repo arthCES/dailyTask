@@ -1,0 +1,15 @@
+<div>
+    {{detailCtrl.data | json}}
+    
+   
+    
+    <md-radio-group ng-model="detailCtrl.selected" ng-change=" detailCtrl.statusChanged()">
+        <md-radio-button ng-value="false" aria-label="Label 1">
+          Pending
+        </md-radio-button>
+
+        <md-radio-button  ng-value="true" aria-label="Green">
+          Completed
+        </md-radio-button>
+    </md-radio-group>
+</div>

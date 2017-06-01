@@ -1,0 +1,38 @@
+<md-nav-bar md-selected-nav-item="currentNavItem">
+  <md-nav-item md-nav-click="goto('page1')" name="page1">Page One</md-nav-item>
+  <md-nav-item md-nav-sref="app.page2" name="page2">Page Two</md-nav-item>
+  <md-nav-item md-nav-href="#page3" name="page3">Page Three</md-nav-item>
+</md-nav-bar>
+
+<nav class="navbar navbar-default "><!--navbar-fixed-top-->
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ces-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand " ><img class="ces-nav-logo" src="core/image/ces.png"> </a>  
+    </div>
+      <div >
+        <ul class="nav navbar-nav row">
+            <li>
+                <a><i class="fa fa-bars fa-2x ces-nav-link" aria-hidden="true"> </i></a>
+            </li>
+        </ul>
+      </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="ces-navbar">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+    
+      <ul class="nav navbar-nav navbar-right">
+        <li><a><i class="fa fa-home fa-2x ces-nav-link" aria-hidden="true" ></i></a></li>
+        <li><a ><i class=" fa fa-power-off fa-2x ces-nav-link" aria-hidden="true"></i>   </a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

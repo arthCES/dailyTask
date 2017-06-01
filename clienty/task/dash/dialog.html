@@ -1,0 +1,29 @@
+ <md-dialog class="col-md-6">
+     <br>
+    <md-dialog-content class="text-center">
+      <div class="col-md-6 ">
+        <input class="form-control"
+               ng-model="dashCtrl.fromTime"
+               format="HH:mm"
+               ng-model-options="{ updateOn: 'blur' }"
+               placeholder="Start time..."
+               moment-picker="dashCtrl.fromTime">
+      </div>
+      <div class="col-md-6 ">
+        <input class="form-control"
+               ng-model="dashCtrl.toTime"
+               format="HH:mm"
+               ng-model-options="{ updateOn: 'blur' }"
+               placeholder="End time..."
+               moment-picker="dashCtrl.toTime">
+      </div>
+        {{dashCtrl.abc}}
+        {{abc}}
+           <br><br><br><br><br>   <br>   <br>   <br>   <br>   <br>
+        </md-dialog-content>
+    <md-dialog-actions>
+        <md-button ng-click="dashCtrl.closeDialog(dashCtrl.fromTime, dashCtrl.toTime)" class="md-primary">
+           Commit Time!!
+        </md-button>
+    </md-dialog-actions>
+</md-dialog>
